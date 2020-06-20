@@ -4,4 +4,4 @@ Proyecto en el que enseño los diseños que la arquitecta Diana Mora ha realizad
 
 ## ¿Como empezar?
 
-Este es un proyeto sencillo el cual puedes correr facimente en un servidor de aplicaciones.
+Este es un proyeto sencillo el cual puedes correr fácilmente en un servidor de aplicaciones.
