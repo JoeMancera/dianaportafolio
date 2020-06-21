@@ -1,0 +1,130 @@
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+/*------------------------------ Variables ------------------------------*/
+:root{
+    /*------------------------------ Colores ------------------------------*/
+    --white: #f4f4f4;
+    --gray-ligth: #c0c0c0;
+    --gray: #656563;
+    --black: #3F3F3F;
+    --coffe-ligth: #A66C4B;
+    --coffe-base: #592E15;
+    --coffie-dark: #402110;
+    /*------------------------------ Tipografía ------------------------------*/
+    --font-family-title: 'Yellowtail', cursive;
+    --font-family: 'Montserrat', sans-serif;
+    /*------------------------------ Unidades ------------------------------*/
+    --standar:16px;
+    --p:12px;
+}
+
+html{
+    background-color: var(--white);
+
+}
+
+body{
+    font-family: var(--font-family);
+    font-size: var(--standar);
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+
+h1{
+    color: var(--black);
+    font-size: 36px;
+    letter-spacing: 4px;
+    line-height: 1.5em;
+    margin: 0px;
+    max-width: 500px;
+}
+
+h2{
+    margin: 0;
+}
+
+h2 strong{
+    color: var(--coffe-ligth);
+    font-weight: 500;
+}
+
+h2{
+    color: var(--gray);
+    font-family: var(--font-family);
+    font-size: 24px;
+}
+
+a{
+    color: var(--coffe-ligth);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--coffe-base)
+}
+
+ol, ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+hr{
+    margin: 0;
+    color: var(--gray-ligth);
+}
+
+.me small{
+    color: var(--gray-ligth)
+}
+
+.container{
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+    padding: 0 .5em;
+}
+
+.header{
+    height: 70px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header a{
+    text-decoration: none;   
+    display: flex;    
+    align-items: center;
+    height: inherit;
+    padding: 0 10px;
+}
+
+.header ol{
+    display: flex;
+    height: inherit;
+}
+
+.header ol li{
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    height: inherit;
+}
