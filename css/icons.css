@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?f0umkv');
+    src:  url('../fonts/icomoon.eot?f0umkv#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?f0umkv') format('truetype'),
+    url('../fonts/icomoon.woff?f0umkv') format('woff'),
+    url('../fonts/icomoon.svg?f0umkv#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+    content: "\e9bd";
+}
+.icon-cross:before {
+    content: "\ea0f";
+}
+.icon-instagram:before {
+    content: "\ea92";
+}
+.icon-twitter:before {
+    content: "\ea96";
+}
+.icon-linkedin:before {
+    content: "\eac9";
+}
+
+
+.social-link.twitter{
+    background-image: url(../images/twitter.svg);
+}
+
+.social-link.facebook{
+    background-image: url(../images/facebook.svg);
+}
+
+.social-link.linkedin{
+    background-image: url(../images/linkedIn.svg);
+}
+
+.social-link.github{
+    background-image: url(../images/github.svg);
+}
+.social-link.instagram{
+    background-image: url(../images/instagram.svg);
+}

@@ -10,6 +10,7 @@
     <title>Portafolio de Diana Mora 🍇</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,700&family=Yellowtail&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/icons.css">
 </head>
 <body>
     <span class="icon-menu burger-button" id=burger-menu></span>
@@ -112,7 +113,7 @@
             </div>
         </div>
     </section>
-    <section id="contact" class="content">
+    <section id="contact">
         <div class="container">
             <h3>¿Construimos algo juntos?</h3>
             <div class="social">
@@ -128,5 +129,37 @@
             <div>"EL MUNDO NO ES UN ÁNGULO RECTO" <a target="_blank" href="https://es.wikipedia.org/wiki/Zaha_Hadid">Zaha Hadid (1950-2016)</a></div>
         </div>
     </footer>
+    <script>
+        const menu = document.querySelector('.menu');
+        const burger = document.querySelector('#burger-menu');
+        
+        const ipad = window.matchMedia('screen and (max-width: 840px)');
+        
+        if(ipad.matches)
+        burger.addEventListener('click', ActMenu);        
+        
+        ipad.addListener(changeScreen);
+        
+        function changeScreen(event){
+            if (event.matches) {
+                burger.addEventListener('click', ActMenu);
+            } else {
+                burger.removeEventListener('click', ActMenu);
+            }
+        }
+        
+        function ActMenu(){
+            if(menu.classList.contains('is-active')){
+                menu.classList.remove('is-active');
+                burger.classList.remove('icon-cross');
+                burger.classList.add('icon-menu');
+            } else {
+                menu.classList.add('is-active');
+                burger.classList.add('icon-cross');
+                burger.classList.remove('icon-menu');
+            }
+        }
+        
+    </script>
 </body>
 </html>
